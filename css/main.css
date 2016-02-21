@@ -11,9 +11,12 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    color: #999;
+    font-size: 78px;
+    line-height: auto;
+    background: #000;
+    font-family: monospace, monospace;
+    padding:20px 120px;
 }
 
 /*
@@ -23,6 +26,15 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #ddff00;
+}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -94,22 +106,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
