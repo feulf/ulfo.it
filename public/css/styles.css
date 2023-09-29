@@ -5150,6 +5150,10 @@ button.bg-black:focus {
   box-shadow: none !important;
 }
 
+.shadow-strong {
+  text-shadow: 2px 2px 4px #000000;  /* horizontal-offset vertical-offset blur-radius color */
+}
+
 .w-25 {
   width: 25% !important;
 }
