@@ -54,3 +54,21 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var translateY = 300 - (scroll / 8);
+    var translateY2 = -300 + (scroll / 6);
+    var backgroundPos = 80 - (scroll / 100); // Adjust the division factor for speed
+    $(".parallax").css({
+      transform: "translateY(" + translateY + "px)"
+    });
+    $(".parallax2").css({
+      transform: "translateY(" + translateY2 + "px)"
+    });
+    $(".parallax3").css({
+      'background-position': 'center ' + backgroundPos + '%'
+    });
+  });
+});
