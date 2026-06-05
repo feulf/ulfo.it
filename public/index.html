@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <title>Federico Ulfo - Web3 / Data / Infra</title>
+    <meta name="description" content="Federico Ulfo — software engineer, architect, AI engineer, and founder. Production AI consulting for founders, CTOs, and engineering teams building agents, RAG, data pipelines, evals, and AI product architecture."/>
+    <meta name="author" content="Federico Ulfo"/>
+    <title>Federico Ulfo - Production AI Consulting</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
@@ -30,6 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">⇧</a></li>
+                <li class="nav-item"><a class="nav-link" href="/consulting">Consulting</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Contact</a></li>
             </ul>
@@ -73,6 +74,23 @@
     </div>
 </section>
 
+<!-- Consulting -->
+<section class="home-consulting" id="consulting">
+    <div class="container">
+        <span class="eyebrow">Work with me</span>
+        <h2>Production AI consulting</h2>
+        <p>
+            I help founders, CTOs, and engineering teams design, build, and ship production-grade AI
+            systems — agents, RAG, data pipelines, evals, infrastructure, and product architecture.
+        </p>
+        <a class="btn btn-accent" href="/consulting" data-cta="home-work-with-me">Work with me →</a>
+        <p class="note mt-4 mb-0">
+            I also run <a href="https://aisocratic.org" target="_blank" rel="noopener">AI Socratic</a>, a
+            community of AI builders, researchers, engineers, and founders.
+        </p>
+    </div>
+</section>
+
 <section class="projects-section bg-light" id="about">
     <div class="container">
         <!-- Project One Row-->
@@ -92,11 +110,12 @@
                                         href="https://gauntlet.network" target="_blank">GauntletNetwork</a> from series
                                 A to $1B valuation.<br>
                                 I'm currently bootstrapping <a href="https://x.com/etnalabs" target="_blank">EtnaLabs</a> and building FlowAI, an AI data platform to collect and analyze web2 and web3 data.
+                                <br><br>I offer <a href="/consulting">production AI consulting</a> for founders, CTOs, and engineering teams, and I run <a href="https://aisocratic.org" target="_blank">AI Socratic</a>, a community of AI builders, researchers, engineers, and founders.
                                 <br><br>
                                 <br>
 
                             <div class="social">
-                                <a href="mailto:federico@etnalabs.io">federico@etnalabs.io</a>
+                                <a href="mailto:fed@aisocratic.org">fed@aisocratic.org</a>
                                 <a class="mx-2" target="_blank" href="https://linkedin.com/in/federicoulfo"><i
                                         class="fab fa-linkedin"></i></a>
                                 <a class="mx-2" target="_blank" href="https://x.com/feulf"><i
@@ -145,5 +164,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
+<!-- CTA click tracking hook: fires window.track(...) if an analytics provider is wired up later -->
+<script>
+    (function () {
+        document.querySelectorAll("[data-cta]").forEach(function (el) {
+            el.addEventListener("click", function () {
+                var label = el.getAttribute("data-cta");
+                if (typeof window.track === "function") {
+                    window.track("cta_click", {label: label, page: "home"});
+                }
+                // TODO: when analytics (e.g. gtag/plausible) is added, forward this event there.
+            });
+        });
+    })();
+</script>
 </body>
 </html>
