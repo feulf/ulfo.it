@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ulfo;Federico;;;
+FN:Federico Ulfo
+TITLE:Software Engineer · AI Consultant · Founder
+ORG:Ulfo Consulting
+EMAIL;TYPE=INTERNET,PREF:fed@aisocratic.org
+URL:https://ulfo.it
+X-SOCIALPROFILE;TYPE=linkedin:https://linkedin.com/in/federicoulfo
+X-SOCIALPROFILE;TYPE=twitter:https://x.com/feulf
+X-SOCIALPROFILE;TYPE=github:https://github.com/feulf
+X-SOCIALPROFILE;TYPE=telegram:https://t.me/feulf
+NOTE:Production AI consulting for founders, CTOs, and engineering teams.
+END:VCARD
